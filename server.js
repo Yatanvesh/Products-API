@@ -28,12 +28,6 @@ app.use(middleware.handleError);
 app.use(middleware.notFound);
 
 
-app.listen(port, () =>
-	console.log(cowsay.say({
-		text: `Started on port ${port}`,
-		e: "uWu",
-		T: "U "
-	}))
-);
+app.listen(port, () =>console.log(`Started on port ${port}`));
 
 
